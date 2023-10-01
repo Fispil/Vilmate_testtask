@@ -1,0 +1,21 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:parcel",
+    "start:parcel": "parcel ./src/index.html",
+    "build:parcel": "parcel build index.html",
+    "deploy": "npm run build:parcel && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "parcel": "^2.9.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
